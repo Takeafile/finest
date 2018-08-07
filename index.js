@@ -26,5 +26,9 @@ module.exports = function(
 
   sender.pipe(duplex).pipe(receiver)
 
-  return duplexify(sender, receiver, options)
+  const result = duplexify(sender, receiver, options)
+
+  duplex.on('error', result.emit.bind(result, 'error'))
+
+  return result
 }
