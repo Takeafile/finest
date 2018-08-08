@@ -21,8 +21,8 @@ module.exports = function(
       _callback = callback
   }
 
-  const sender   = new PassThrough({...sendOpts, flush})
-  const receiver = new PassThrough({...recvOpts, flush})
+  const sender   = new PassThrough({...sendOpts, flush, objectMode: true})
+  const receiver = new PassThrough({...recvOpts, flush, objectMode: true})
 
   sender.pipe(duplex).pipe(receiver)
 
