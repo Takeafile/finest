@@ -16,7 +16,7 @@ module.exports = function(
       _callback()
       callback()
 
-      duplex.destroy()
+      setImmediate(duplex.destroy.bind(duplex))
       result.destroy()
     }
 
