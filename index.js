@@ -15,6 +15,9 @@ module.exports = function(
     {
       _callback()
       callback()
+
+      duplex.destroy()
+      result.destroy()
     }
 
     else
