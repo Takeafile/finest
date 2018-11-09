@@ -27,10 +27,10 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/piranna/finest#readme",
   "dependencies": {
-    "duplexify": "^3.6.0"
+    "duplexify": "^3.6.1"
   },
   "devDependencies": {
-    "jest": "^23.5.0"
+    "jest": "^23.6.0"
   },
   "jest": {
     "testEnvironment": "node"
