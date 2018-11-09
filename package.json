@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/piranna/finest.git"
+    "url": "git+ssh://git@github.com/Takeafile/finest.git"
   },
   "keywords": [
     "end",
@@ -25,7 +25,7 @@
   ],
   "author": "Jesús Leganés-Combarro 'piranna' <piranna@gmail.com>",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/piranna/finest#readme",
+  "homepage": "https://github.com/Takeafile/finest#readme",
   "dependencies": {
     "duplexify": "^3.6.1"
   },
